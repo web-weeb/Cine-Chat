@@ -1,6 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ /* @import url('https://fonts.cdnfonts.com/css/satoshi'); */
+
+ :root{
+  --font-heading:"satoshi";
+ }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(89, 87, 87);
+  border-radius: 2px;
+  width: 0.4rem;
+  height: 0rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e4040;
+  border-radius: 7px;
+}
 
 .bgbody {
   background: url("../src/assets/images/home.jpg");
@@ -9,13 +35,15 @@
   background-position: center;
 }
 
+
 .container {
-  width: 944px;
-  height: 64px;
+  width: 50rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2 auto;
+  padding: 0px 35px;
 }
 
 .glass {
@@ -23,18 +51,23 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 48px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.32);
   background: rgba(212, 212, 212, 0.1);
   backdrop-filter: blur(17px);
+  color: white;
+  font-size: large;
+  outline: none;
+  
 }
 
 .glassback{
   display: flex;
   flex-direction: column;
+  font-family: var(--font-heading);
   align-items: center;
   justify-items: center;
-  width: 47rem;
-  height: 28.25rem;
+  width: 32rem;
+  height: 20rem;
   flex-shrink: 0;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -47,8 +80,8 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  width: 35rem;
-  height: 25.75rem;
+  width: 25rem;
+  height: 19rem;
   flex-shrink: 0;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -56,9 +89,10 @@
   backdrop-filter: blur(17px);
 }
 
+/* input box of signup page */
 .inputbox{
-  width: 23rem;
-  height: 3rem;
+  width: 16rem;
+  height: 2.1rem;
   flex-shrink: 0;
   border-radius: 48px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -68,3 +102,4 @@
   outline: none;
   color: white;
 }
+
