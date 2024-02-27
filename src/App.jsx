@@ -8,7 +8,6 @@ const App = () => {
       <div>
         {/* <Overview /> */}
         <Home />
-        {/* <Sidebar/> */}
       </div>
     </>
   );

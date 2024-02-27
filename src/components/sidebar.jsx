@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import message from "../assets/icons/message.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdAdd } from "react-icons/io";
-const Sidebar = () => {
+
+//used in home page
+const Sidebar = ({ toggleSideBar }) => {
   const [isClickedDarkMode, setIsClickedDarkMode] = useState(false);
   const handleClick = () => {
     setIsClickedDarkMode(!isClickedDarkMode);
@@ -11,15 +13,17 @@ const Sidebar = () => {
   return (
     <div>
       <motion.div
-        className=" fixed p-5 max-w-xs w-full flex flex-col items-start gap-6 top-0 bottom-0 left-0 z-50 space-y-8 bg-neutral-600 bg-opacity-10 rounded-tr-3xl rounded-br-3xl border-r-[0.02rem] border-gray-500  text-white"
-        initial={{ x: -280, y: 0 }}
-        animate={{ x: 0, y: 0 }}
+        className=" fixed p-5 max-w-xs w-full flex flex-col items-start gap-6 top-0 bottom-0 left-0 z-50 space-y-8 bg-neutral-800 bg-opacity-90 rounded-tr-3xl rounded-br-3xl border-r-[0.02rem] border-gray-500  text-white"
+        initial={{ x: -280, y: 0, opacity: 0 }}
+        exit={{ x: -280, y: 0, opacity: 0 }}
+        animate={{ x: 0, y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeInOut" }}
       >
         <GiHamburgerMenu
           className="cursor-pointer "
           color="#F68D00"
           size={24}
+          onClick={toggleSideBar}
         />
         <div className="flex justify-center w-32 text-white py-2 bg-neutral-800 rounded-3xl cursor-pointer">
           <IoMdAdd color="#F68D00" size={24} />
