@@ -30,27 +30,27 @@ const Overview = () => {
         {/*background video end*/}
         {isVisibleSignUp && <SignUp />}
         {isVisibleOverview && (
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gradient-to-b from-black/30 to-black/60">
             {/* glassback section start */}
             <div className="glassback">
               <h1
-                className="font-SatoshiVariable text-9xl font-bold text-center pt-8"
+                className="font-SatoshiVariable text-8xl font-bold text-center pt-5"
                 style={textStyle}
               >
-                CineChat
+                CineChat.
               </h1>
-              <p className="text-gray-300 font-MuktaVaani text-[1.78rem] font-medium text-center mb-[8.5rem]">
+              <p className="text-gray-300 font-MuktaVaani text-2xl font-light text-center mb-20">
                 What's Your Movie Mood Today?
               </p>
               <div
                 // onclick
                 onClick={toggleVisibility}
-                className="flex w-44  py-4 justify-center items-center rounded-full border border-opacity-30 border-white bg-opacity-10 backdrop-blur backdrop-filter cursor-pointer gap-4 mb-1"
+                className="flex w-36  py-2 justify-center items-center rounded-full border border-opacity-30 border-white bg-opacity-10 backdrop-blur backdrop-filter cursor-pointer gap-4 mb-1"
               >
-                <h4 className="text-gray-300 font-SatoshiVariable text-xl font-medium text-center">
+                <h4 className="text-gray-300 text-lg font-medium text-center">
                   SIGNUP
                 </h4>
-                <img src={signup} alt="signup" />
+                <img className="h-5" src={signup} alt="signup" />
               </div>
 
               <div className="flex px-2  py-1 justify-center items-center gap-2">
