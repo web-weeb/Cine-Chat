@@ -1,13 +1,14 @@
 import React from "react";
 import Home from "./components/home";
 import Overview from "./components/overview";
-import Sidebar from "./components/sidebar";
+import Messagebox from "./components/messagebox";
 const App = () => {
   return (
     <>
       <div>
         {/* <Overview /> */}
         <Home />
+        {/* <MessageBox /> */}
       </div>
     </>
   );
