@@ -17,19 +17,19 @@
 }
 
 ::-webkit-scrollbar {
-  background-color: rgb(89, 87, 87);
+  background-color: rgb(41, 40, 40);
   border-radius: 2px;
   width: 0.4rem;
   height: 0rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3e4040;
+  background-color: #414242;
   border-radius: 7px;
 }
 
 .bgbody {
-  background: url("../src/assets/images/home.jpg");
+  background: url("../src/assets/images/home.jpg") no-repeat;
   min-height: 100vh;
   background-size: 100%;
   background-position: center;
